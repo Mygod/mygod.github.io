@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nostalgia land (click to start)</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg-image {
+    height: 100%;
+
+    background: url('https://64.media.tumblr.com/996804aaf26680c4eb5eee61b2c47f1b/tumblr_nqgo1xLrXZ1uwxht5o1_500.gifv') no-repeat center center;
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+const request = fetch('./littleroot-town-loop.flac', {mode: 'no-cors'});
+const actx = new AudioContext();
+const gain = actx.createGain();
+gain.connect(actx.destination);
+let srcNode, playing = false;
+
+async function doPlay() {
+  if (!srcNode) srcNode = (async function () {
+    const response = await request;
+    const array = await response.arrayBuffer();
+    await actx.resume();
+    const buffer = await actx.decodeAudioData(array);
+    const srcNode = actx.createBufferSource();
+    srcNode.connect(gain);
+    srcNode.buffer = buffer;
+    srcNode.loopStart = 55 / 18;
+    srcNode.loopEnd = 1015 / 18;
+    srcNode.loop = true;
+    srcNode.start();
+    return srcNode;
+  })();
+  let node = await srcNode;
+  if (playing) {
+    gain.gain.linearRampToValueAtTime(0, actx.currentTime + .5);
+    playing = false;
+  } else {
+    gain.gain.linearRampToValueAtTime(1, actx.currentTime + .5);
+    playing = true;
+  }
+}
+</script>
+
+<div class="bg-image" onclick="doPlay()"></div>
+
+</body>
+</html>
