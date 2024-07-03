@@ -323,10 +323,10 @@ function momClose() {
 /************** PRELOAD IMAGES **************/
 
 $(function () {
-    $('<IMG>').attr('src', 'http://goofans.com/MOM/images/MOM_eyelid.png');
-    $('<IMG>').attr('src', 'http://goofans.com/MOM/images/xbutton_over.png');
-    $('<IMG>').attr('src', 'http://goofans.com/MOM/images/popup.png');
-    $('<IMG>').attr('src', 'http://goofans.com/MOM/images/loading_anim.gif');
+    $('<IMG>').attr('src', 'MOM_eyelid.png');
+    $('<IMG>').attr('src', 'xbutton_over.png');
+    $('<IMG>').attr('src', 'popup.png');
+    $('<IMG>').attr('src', 'loading_anim.gif');
 });
 
 

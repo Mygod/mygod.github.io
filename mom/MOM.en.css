@@ -82,7 +82,7 @@ BODY {
 #mom-window {
 	width: 686px;
 	height: 511px;
-	background: url(http://goofans.com/MOM/images/mom.png);
+	background: url(mom.png);
     display: none;
 }
 
@@ -96,7 +96,7 @@ BODY {
 }
 
 .eyelid {
-	background: url(http://goofans.com/MOM/images/MOM_eyelid.png);
+	background: url(MOM_eyelid.png);
 	width: 123px;
 	height: 123px;
 	position: absolute;
@@ -128,7 +128,7 @@ BODY {
 #close_button {
 	width: 22px;
 	height: 21px;
-	background: url(http://goofans.com/MOM/images/xbutton_up.png);
+	background: url(xbutton_up.png);
 	position: absolute;
 	right: 5px;
 	top: 5px;
@@ -136,7 +136,7 @@ BODY {
 }
 
 #close_button:hover {
-	background: url(http://goofans.com/MOM/images/xbutton_over.png);
+	background: url(xbutton_over.png);
 }
 
 #question_phase, #answer_phase {
@@ -150,7 +150,7 @@ BODY {
 
 
 #brand {
-	background: url(http://goofans.com/MOM/images/brand.png);
+	background: url(brand.png);
 	width: 181px;
 	height: 28px;
 	position: relative;
@@ -185,7 +185,7 @@ BODY {
 }
 
 .textBarTopHover {
-	background: url(http://goofans.com/MOM/images/textBar_top.png) no-repeat bottom center;
+	background: url(textBar_top.png) no-repeat bottom center;
 }
 
 .textBarMiddle {
@@ -196,7 +196,7 @@ BODY {
 }
 
 .textBarMiddleHover {
-	background: url(http://goofans.com/MOM/images/textBar_middle.png) repeat-y center center;
+	background: url(textBar_middle.png) repeat-y center center;
 }
 
 .textBarBottom {
@@ -205,7 +205,7 @@ BODY {
 }
 
 .textBarBottomHover {
-	background: url(http://goofans.com/MOM/images/textBar_bottom.png) no-repeat bottom center;
+	background: url(textBar_bottom.png) no-repeat bottom center;
 }
 
 #textBarCursor {
@@ -289,7 +289,7 @@ BODY {
 }
 
 #console-window {
-	background: url(http://goofans.com/MOM/images/popup.png) no-repeat center center;
+	background: url(popup.png) no-repeat center center;
 	width: 512px;
 	height: 382px;
 	color: #00d800;
