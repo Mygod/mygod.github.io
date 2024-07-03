@@ -1,0 +1,337 @@
+﻿
+
+HTML {
+	width: 100%;
+	height: 100%;
+}
+
+BODY {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	min-width: 686px;
+	min-height: 511px;
+    overflow: hidden;
+}
+
+IMG#pagebg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+#flare {
+    overflow: hidden;
+    background: url(lensFlare.png) no-repeat center center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -800px 0 0 -800px;
+    width: 1600px;
+	height: 1600px;
+    z-index: -2;
+    animation-name: rotate; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+    animation-duration: 60s; 
+    -webkit-animation-name: rotate; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 60s; 
+    -moz-animation-name: rotate; 
+    -moz-animation-iteration-count: infinite; 
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 60s; 
+}
+
+BODY {
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+}
+
+.aligner {
+	display: table;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.aligner2 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.aligner3 {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#mom-splash {
+	width: 486px;
+	height: 314px;
+	background: url(momSplash.png);
+}
+
+#mom-window {
+	width: 686px;
+	height: 511px;
+	background: url(http://goofans.com/MOM/images/mom.png);
+    display: none;
+}
+
+#mom-starting {
+    background: white;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+}
+
+.eyelid {
+	background: url(http://goofans.com/MOM/images/MOM_eyelid.png);
+	width: 123px;
+	height: 123px;
+	position: absolute;
+	top: 80px;
+	display: none;
+}
+
+#eyelid1 {
+	left: 190px;
+}
+
+#eyelid2 {
+	left: 376px;
+}
+
+#address {
+	position: absolute;
+	left: 30px;
+	top: 28px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 24px;
+	left: 0;
+	right: 0;
+}
+
+#close_button {
+	width: 22px;
+	height: 21px;
+	background: url(http://goofans.com/MOM/images/xbutton_up.png);
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+#close_button:hover {
+	background: url(http://goofans.com/MOM/images/xbutton_over.png);
+}
+
+#question_phase, #answer_phase {
+	position: absolute;
+	top: 220px;
+	left: 20px;
+	width: 646px;
+	height: 240px;
+	overflow: hidden;
+}
+
+
+#brand {
+	background: url(brand.cn.png);
+	width: 181px;
+	height: 28px;
+	position: relative;
+	margin: 0px auto;
+}
+
+#answer_phase {
+	display: none;
+}
+
+#loading {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+}
+
+#textBar {
+	width: 475px;
+	height: 42px;
+	left: 50px;
+	margin-top: 5px;
+	position: absolute;
+}
+
+.textBarTop {
+	background: url(textBar_top_up.png) no-repeat bottom center;
+	height: 13px;
+}
+
+.textBarTopHover {
+	background: url(http://goofans.com/MOM/images/textBar_top.png) no-repeat bottom center;
+}
+
+.textBarMiddle {
+	background: url(textBar_middle_up.png) repeat-y center center;
+	padding: 0px 15px;
+	min-height: 16px;
+    -moz-user-select: none;
+}
+
+.textBarMiddleHover {
+	background: url(http://goofans.com/MOM/images/textBar_middle.png) repeat-y center center;
+}
+
+.textBarBottom {
+	background: url(textBar_bottom_up.png) no-repeat bottom center;
+	height: 13px;
+}
+
+.textBarBottomHover {
+	background: url(http://goofans.com/MOM/images/textBar_bottom.png) no-repeat bottom center;
+}
+
+#textBarCursor {
+    background: url(textBar_cursor.png) no-repeat center left;
+    height: 19px;
+    position: absolute;
+    width: 5px;
+    margin: 12px 15px;
+}
+
+#askButton {
+    cursor: pointer;
+    position: absolute;
+	right: 17.5px;
+	margin-top: 8.5px;
+}
+
+.askText {
+    cursor: pointer;
+    position: absolute;
+	right: 60px;
+	margin-top: 16.5px;
+	font-family: "Tw Cen MT Condensed Extra Bold", 微软雅黑;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+@font-face{
+    font-family: "Tw Cen MT Condensed Extra Bold", 微软雅黑;
+    src: url(TCCEB.TTF);
+}
+
+.TwCen18 {
+    cursor: pointer;
+    font-family: "Tw Cen MT Condensed Extra Bold", 微软雅黑;
+    font-weight: bolder;
+    font-size: 24px;
+    color: white;
+    padding: 1px;
+    text-shadow: 
+        1px 0px 0px black,
+        1.414px 1.414px 0px black,
+        -1px 0px 0px black,
+        -1.414px 1.414px 0px black,
+        0px 1px 0px black,
+        -1.414px -1.414px 0px black,
+        0px -1px 0px black,
+        1.414px -1.414px 0px black;
+}
+
+.TwCen18:hover {
+    color: lime;
+}
+
+.TwCen36 {
+    cursor: default;
+    font-family: "Tw Cen MT Condensed Extra Bold", 微软雅黑;
+    font-weight: bolder;
+    font-size: 48px;
+    padding: 1px;
+    text-shadow: 
+        1px 0px 0px #BBB,
+        1.414px 1.414px 0px #BBB,
+        -1px 0px 0px #BBB,
+        -1.414px 1.414px 0px #BBB,
+        0px 1px 0px #BBB,
+        -1.414px -1.414px 0px #BBB,
+        0px -1px 0px #BBB,
+        1.414px -1.414px 0px #BBB;
+}
+
+#theAnswer {
+	height: 100%;
+    text-align: center;
+}
+
+#console-window {
+	background: url(http://goofans.com/MOM/images/popup.png) no-repeat center center;
+	width: 512px;
+	height: 382px;
+	color: #00d800;
+	display: none;
+        margin: auto auto auto auto;
+        position: relative;
+	text-align: left;
+}
+
+#console-content {
+	position: absolute;
+	top: 44px;
+	left: 24px;
+	width: 470px;
+	height: 316px;
+	font-family: monospace;
+	font-size: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-base-color: #00ff00;
+	scrollbar-arrow-color: #00A700;
+	white-space: pre;
+}
+
+@keyframes rotate {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform:rotate(0deg);
+  }
+  to {
+      -webkit-transform:rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+      -moz-transform:rotate(0deg);
+  }
+  to {
+      -moz-transform:rotate(360deg);
+  }
+}
